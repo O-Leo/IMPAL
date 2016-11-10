@@ -239,10 +239,10 @@ public class PengadaanBuku extends javax.swing.JFrame implements View{
     public String getjudul() {
         return judul.getText();
     }
-    public int getjumlah() {
-        int i ;
+    public short getjumlah() {
+        short i ;
         if(jumlah.getText() != ""){
-            i = Integer.parseInt(jumlah.getText());
+            i = Short.parseShort(jumlah.getText());
         }else { i = 0;}
         return i;
     }
